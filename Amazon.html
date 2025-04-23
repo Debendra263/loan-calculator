@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Style Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f1f3f6;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            scroll-snap-align: start;
+        }
+
+        .card-header .card-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card-body .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card-body .row > div {
+            width: 48%;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .card-img,
+        .card-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .card-body p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .card-footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn-more {
+            display: inline-block;
+            background-color: #ffd814;
+            color: #111;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-more:hover {
+            background-color: #f7ca00;
+        }
+
+        /* Optional: Hide scrollbar (for clean UI) */
+        section::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        section::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./image3/amazon background img.jpg" alt="Amazon Banner">
+    </header>
+
+    <section>
+
+        <!-- Repeat this card block as needed (already shown above)... -->
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Appliances for your home | Up to 55% off</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="./image3/img1.jpg" class="card-img" alt="Air Conditioner">
+                        <p>Air Conditioner</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img2.jpg" class="card-img" alt="Refrigerator">
+                        <p>Refrigerator</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img3.jpg" class="card-img" alt="Microwave Oven">
+                        <p>Microwave Oven</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img4.jpg" class="card-img" alt="Washing Machine">
+                        <p>Washing Machine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn-more">See More</div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Revamp your home in style</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="./image3/img5.jpg" class="card-img" alt="">
+                        <p>Decor Item 1</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img6.jpg" class="card-img" alt="">
+                        <p>Decor Item 2</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img7.jpg" class="card-img" alt="">
+                        <p>Decor Item 3</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img8.jpg" class="card-img" alt="">
+                        <p>Decor Item 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn-more">Explore all</div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Starting ₹149 | Headphones</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="./image3/img9.jpg" class="card-img" alt="">
+                        <p>Headphone 1</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img10.jpg" class="card-img" alt="">
+                        <p>Headphone 2</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img11.jpg" class="card-img" alt="">
+                        <p>Headphone 3</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img12.jpg" class="card-img" alt="">
+                        <p>Headphone 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn-more">See all offers</div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Automotive essentials | Up to 60% off</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="./image3/img13.jpg" class="card-img" alt="">
+                        <p>Essential 1</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img14.jpg" class="card-img" alt="">
+                        <p>Essential 2</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img15.jpg" class="card-img" alt="">
+                        <p>Essential 3</p>
+                    </div>
+                    <div>
+                        <img src="./image3/img16.jpg" class="card-img" alt="">
+                        <p>Essential 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn-more">See more</div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

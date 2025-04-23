@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Go Music</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav span {
+      margin: 10px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .justin, .shreya, .arjit {
+      width: 250px;
+      height: 250px;
+      box-shadow: 2px 2px 6px gray;
+      text-align: center;
+      margin: 20px;
+      padding: 10px;
+      background-color: black;
+      color: whitesmoke;
+      position: relative;
+      transition: background-image 0.3s ease;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .bi {
+      font-size: 24px;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+
+    #arjit:target {
+  background-image: url(./image3/artistimage/arjit.png);
+}
+#justin:target {
+  background-image: url(./image3/artistimage/justin.png);
+}
+#shreya:target {
+  background-image: url(./image3/artistimage/sherya.png);
+}
+
+  </style>
+</head>
+<body>
+  <h2>Popular Artists</h2> 
+  <nav>
+    <span><a href="#justin">Justin Bieber</a></span>
+    <span><a href="#shreya">Shreya Ghosal</a></span>
+    <span><a href="#arjit">Arjit Singh</a></span>
+  </nav>
+
+  <main>
+    <div class="justin" id="justin">
+      <figure></figure>
+      <div>
+        <span class="bi bi-chevron-left"></span>
+        <span class="bi bi-play"></span>
+        <span class="bi bi-pause"></span>
+        <span class="bi bi-chevron-right"></span>
+      </div>
+    </div>
+
+    <div class="shreya" id="shreya">
+      <figure></figure>
+      <div>
+        <span class="bi bi-chevron-left"></span>
+        <span class="bi bi-play"></span>
+        <span class="bi bi-pause"></span>
+        <span class="bi bi-chevron-right"></span>
+      </div>
+    </div>
+
+    <div class="arjit" id="arjit">
+      <figure></figure>
+      <div>
+        <span class="bi bi-chevron-left"></span>
+        <span class="bi bi-play"></span>
+        <span class="bi bi-pause"></span>
+        <span class="bi bi-chevron-right"></span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

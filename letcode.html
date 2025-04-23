@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+    <title>Leet Code</title>
+    <style>
+        body {
+            background-color: rgb(185, 183, 183);
+        }
+      header{
+        font-family: cursive;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      header span {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .js{
+        background-color:goldenrod;
+        padding: 2px;
+        color: whitesmoke;
+      }
+      .btn-premium {
+        background-color: rgba(240, 146, 6, 0.874);
+        color: white;
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+      .bi-bug, .bi-play-fill, .bi-cloud-arrow-up-fill, .bi-file{
+        background-color: rgb(154, 154, 157);
+        padding: 5px;
+        border-radius: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .bi-cloud-arrow-up-fill{
+        color:rgba(10, 232, 47, 0.938);
+      }
+      section {
+      height: 400px;
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      grid-gap: 20px;
+      margin-top: 10px;
+      }
+      .panel-left, .panel-right {
+        background-color: rgb(54, 66, 76);
+        color: aliceblue;
+        border-radius: 5px;
+        overflow: auto;
+      }
+      h1 {
+        font-family: monospace;
+      }
+      .btn-easy, .bi-lock {
+        background-color: rgba(240, 146, 6, 0.874);
+        padding: 5px;
+        border-radius: 5px;
+      }
+      samp {
+        background-color: rgba(240, 146, 6, 0.874) ;
+      }
+      .left-panel-header span {
+        padding-right: 10px;
+
+      }
+      ol li {
+        color: blue;
+        padding: 10px;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="js">JS</span>
+            <span>30 Days of Javascript</span>
+            <i class="bi bi-chevron-left"></i>
+            <i class="bi bi-chevron-right"></i>
+            <i class="bi bi-shuffle"></i>
+
+        </div>
+        <div>
+            <i class="bi bi-bug"></i>
+            <i class="bi bi-play-fill">Run</i>
+            <i class="bi bi-cloud-arrow-up-fill">Submit</i>
+            <i class="bi bi-file"></i>
+        </div>
+        <div>
+            <i class="bi bi-columns-gap"></i>
+            <i class="bi bi-gear-fill"></i>
+            <span>Register</span>
+            <span>or</span>
+            <span>Sign In</span>
+            <span class="btn-premium">Premium</span>
+        </div>
+    </header>
+    <section>
+      <div class="panel-left">
+        <div class="left-panel-header">
+          <span class="bi bi-file-binary">Description</span>
+          <span class="bi bi-book">Editorial</span>
+          <span class="bi bi-funnel">Solution</span>
+          <span class="bi bi-clock-history">Submission</span>
+        </div>
+        <h1>Hello This Debendra </h1>
+        <div>
+          <span class="btn-easy">Easy</span>
+          <span class="bi bi-lock">Companies</span>
+        </div>
+        <div><p>Write a function <samp>createHelloWorld.</samp> it should return a new function that always returns <samp>"Hello World".</samp></p></div>
+        <dl>
+          <dt>
+            Example 1  :
+          </dt>
+          <dd>
+            <pre>
+              Input: args = []
+              Output: "Hello World"
+              Explanation:
+              const f = createHelloWorld();
+              f(); // "HelloWorld"
+
+              The function returned by createHelloWorld should always return "HelloWorld"
+            </pre>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Example 2  :</dt>
+          <dd>
+            <pre>
+              Input: args = [ {},null,42]
+              Output: "HelloWorld"
+              Explanation:
+              const f = createHelloWorld();
+              f({}, null, 42); // "HelloWorld"
+
+              Any arguments could be passed to  the function but it should still always return "Hello World"
+
+            </pre>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="panel-right">
+<h1>Hello Welcome to my world</h1>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li><span class="var">var</span><var>createHelloWorld</var>= function()  { }</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+      </div>
+    </section>
+    
+</body>
+</html>

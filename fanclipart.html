@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fanclipart</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color:white;
+      overflow: hidden;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0deg);
+      transition: transform 0.05s linear;
+    }
+  </style>
+</head>
+<body>
+  <img id="fan" src="./images/fannn1.png" alt="Rotating Fan" />
+
+  <script>
+    const fan = document.getElementById("fan");
+
+    document.addEventListener("mousemove", (event) => {
+      const fanRect = fan.getBoundingClientRect();
+      const fanX = fanRect.left + fanRect.width / 2;
+      const fanY = fanRect.top + fanRect.height / 2;
+
+      const angle = Math.atan2(event.clientY - fanY, event.clientX - fanX) * (180 / Math.PI);
+      fan.style.transform = `translate(-50%, -50%) rotate(${angle + 90}deg)`; // +90 to align image correctly
+    });
+  </script>
+</body>
+</html>
